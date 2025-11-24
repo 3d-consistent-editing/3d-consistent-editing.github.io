@@ -127,9 +127,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <image src="static/images/intro_new.svg" />
+      <image src="static/images/introfig_matched.pdf" />
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">AVA-NVS</span> allows to change the visual appearance of an observed scene while preserving the underlying geometry
+        <span class="dnerf">Our method enables consistent editing
       </h2>
     </div>
   </div>
@@ -144,9 +144,9 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present a generalizable novel view synthesis method which enables modifying the visual appearance of an observed scene so rendered views match a target weather or lighting condition without any scene specific training or access to reference views at the target condition.
+           Recent advancements in diffusion models have greatly improved text-based image editing, yet methods that edit images independently often produce geometrically and photometrically inconsistent results across different views of the same scene. Such inconsistencies are particularly problematic for editing of 3D representations such as NeRFs or Gaussian Splat models. 
           <p>
-            Our method is based on a pretrained generalizable transformer architecture and is fine-tuned on synthetically generated scenes under different appearance conditions. This allows for rendering novel views in a consistent manner for 3D scenes that were not included in the training set, along with the ability to (i) modify their appearance to match the target condition and (ii) smoothly interpolate between different conditions. Experiments on real and synthetic scenes show that our method is able to generate 3D consistent renderings while making realistic appearance changes, including qualitative and quantitative comparisons.          </p>
+            We propose a training-free diffusion framework that enforces multi-view consistency during the image editing process. The key assumption is that corresponding points in the unedited images should undergo similar transformations after editing. To achieve this, we introduce a consistency loss that guides the diffusion sampling toward coherent edits. The framework  is flexible and can be combined with widely varying image editing methods, supporting both dense and sparse multi-view editing setups. Experimental results show that our approach significantly improves 3D consistency compared to existing multi-view editing methods. We also show that this increased consistency enables high-quality Gaussian Splat editing with sharp details and strong fidelity to user-specified text prompts.We propose a training-free diffusion framework that enforces multi-view consistency during the image editing process. The key assumption is that corresponding points in the unedited images should undergo similar transformations after editing. To achieve this, we introduce a consistency loss that guides the diffusion sampling toward coherent edits. The framework  is flexible and can be combined with widely varying image editing methods, supporting both dense and sparse multi-view editing setups. Experimental results show that our approach significantly improves 3D consistency compared to existing multi-view editing methods. We also show that this increased consistency enables high-quality Gaussian Splat editing with sharp details and strong fidelity to user-specified text prompts. </p>
         </div>
       </div>
     </div>
