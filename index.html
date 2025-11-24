@@ -1,3 +1,4 @@
+Here is full html code:
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,13 +32,7 @@
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 
-  <style>
-    .video-wrapper {
-        display: flex;
-        justify-content: center; /* This centers the video horizontally */
-    }
-  </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
@@ -73,7 +68,8 @@
           
           <div class="column has-text-centered">
             <div class="publication-links">
-                            <span class="link-block">
+              <!-- PDF Link. -->
+              <span class="link-block">
                 <a href="static/pdfs/AVA_NVS_Arxiv_2024.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -91,24 +87,16 @@
                   <span>arXiv</span>
                 </a>
               </span>
-                            <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=p8gciyfwqA4"
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="ADD ME"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fab fa-youtube"></i>
+                      <i class="far fa-images"></i>
                   </span>
-                  <span>Video</span>
-                </a>
-              </span>
-                            <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code (Coming Soon)</span>
+                  <span>Data</span>
                   </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -116,14 +104,26 @@
     </div>
   </div>
 </section>
-  <div class="video-wrapper">
-    <video controls>
-      <source src="MainVideo.mp4" type="video/mp4">
-    </video>
-  </div>
-    <section class="section">
+<!-- Paper video. -->
+  <!--/<div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Video</h2>
+      <div class="publication-video">
+        <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div> -->
+  <video controls>
+    <source src="MainVideo.mp4" type="video/mp4">
+  </video>
+  <!--/ Paper video. -->
+
+
+
+<section class="section">
   <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
@@ -134,22 +134,22 @@
         </div>
       </div>
     </div>
-      
+    <!--/ Abstract. -->
+  
   </div>
 </section>
 
   <section class="section">
   <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
+    <!-- Method. -->
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Method</h2>
       
       </div>
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-      </div>
     </div>
-      
+    <!--/ Abstract. -->
+  
   </div>
 </section>
 
@@ -189,3 +189,7 @@
 
 </body>
 </html>
+
+
+
+Update it with this change. Changing only the MainVideo to be centered using this method.
