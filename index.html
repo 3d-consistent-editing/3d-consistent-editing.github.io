@@ -36,6 +36,14 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <script>
+  window.MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
 </head>
 <body>
 
@@ -154,6 +162,9 @@
         <h2 class="title is-3">Multi-view Consistent Editing</h2>
         <div class="content has-text-justified">
           
+          <p> 
+            Image editing methods applied independently to multi-view images often produce inconsistent edits across views. Our method improves multi-view consistency by guiding the diffusion process to generate edited images with improved consistency.
+          </p> 
           <div class="container is-max-desktop">
             <div class="hero-body">
               <image src="static/images/ConsistencyExample.png" />
@@ -163,9 +174,6 @@
             </div>
           </div>
 
-          <p> 
-            Image editing methods applied independently to multi-view images often produce inconsistent edits across views. Our method improves multi-view consistency by guiding the diffusion process to generate edited images with improved consistency.
-          <p> 
         </div>
       </div>
     </div>
@@ -182,17 +190,22 @@
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
 
+          <p> 
+            Our method guides the diffusion editing process to improve milti-view consistency.
+         </p>
    <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <image src="static/images/systemfig.png" />
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Systemfigure
+        <span class="dnerf">
       </h2>
     </div>
   </div>
 </section>
-
+         <p> 
+            Given a set of input images, each view is edited sequentially by guiding the diffusion process based on the previously edited images. The guidance is based on the assumption that matching points in the \emph{unedited} images should be edited similarly. During the diffusion process the noise estimate $\epsilon(z_t,t)$ is modified according to a consistency loss $\mathcal{L}_c$ resulting in multi-view consistent edits.
+          </p> 
           
         </div>
       </div>
@@ -211,7 +224,7 @@
         <div class="content has-text-justified">
     <p> 
       We here show additional results combining our method with  <a href="https://arxiv.org/abs/2403.12036" target="_blank">pix2pix-turbo</a>, a editing method based on one-step diffusion.
-       <p>
+       </p>
      <!-- pix2pix turbo video. -->
     <!--/<div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
