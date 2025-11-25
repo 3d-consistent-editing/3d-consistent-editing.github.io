@@ -146,14 +146,23 @@
    
 </section>
 
-    <section class="section">
+<section class="section">
   <div class="container is-max-desktop">
     <!-- Method -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Multi-view consistent editing</h2>
+        <h2 class="title is-3">Multi-view Consistent Editing</h2>
         <div class="content has-text-justified">
-  
+          
+          <div class="container is-max-desktop">
+            <div class="hero-body">
+              <image src="static/images/ConsistencyExample.png" />
+              <h2 class="subtitle is-6 has-text-centered"> <!-- Changed from default subtitle to is-6 -->
+                <span class="dnerf">Image editing methods applied independently to multi-view images often produce inconsistent edits across views. Our method improves multi-view consistency by guiding the diffusion process to generate edited images with improved consistency.
+              </h2>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -170,15 +179,7 @@
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
 
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <image src="static/images/introfig_matched.svg" />
-        <h2 class="subtitle has-text-centered">
-          <span class="dnerf">Image editing methods applied independently to multi-view images often produce inconsistent edits across views, as shown here where corresponding regions differ between edits.
-    Our method improves multi-view consistency by guiding the diffusion process under the assumption that matching points in the unedited images, as shown by the red lines, should be edited similarly.
-        </h2>
-      </div>
-    </div>
+   
           
         </div>
       </div>
