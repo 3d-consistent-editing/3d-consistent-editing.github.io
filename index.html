@@ -204,12 +204,48 @@
   </div>
 </section>
          <p> 
-            Given a set of input images, each view is edited sequentially by guiding the diffusion process based on the previously edited images. The guidance is based on the assumption that matching points in the \emph{unedited} images should be edited similarly. During the diffusion process the noise estimate $\epsilon(z_t,t)$ is modified according to a consistency loss $\mathcal{L}_c$ resulting in multi-view consistent edits.
+            Given a set of input images, each view is edited sequentially by guiding the diffusion process based on the previously edited images. The guidance is based on the assumption that matching points in the unedited images should be edited similarly. During the diffusion process the noise estimate $\epsilon(z_t,t)$ is modified according to a consistency loss $\mathcal{L}_c$ resulting in multi-view consistent edits.
           </p> 
           
         </div>
       </div>
     </div>
+
+        <!--/ Sparse Editing  -->
+  </div>
+</section>
+
+  <section class="section">
+  <div class="container is-max-desktop">
+    <!---->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3"> Our method can easily be combined with different 2D Editing methods </h2>
+        <div class="content has-text-justified">
+    <p> 
+      Our method can also be utilized for sparse-view editing
+       </p>
+     <!-- pix2pix turbo video. -->
+    <!--/<div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <video controls>
+      <source src="pix2pix-turbo-results.mp4" type="video/mp4">
+    </video>
+    <!--/ Paper video. -->
+
+          
+        </div>
+      </div>
+    </div>
+    <!--/ Sparse Editing -->
+
+
     
     <!--/ Different Editing  -->
   </div>
@@ -244,11 +280,12 @@
       </div>
     </div>
     <!--/ Different Editing -->
+
+
+    
     
   </div>
 </section>
-
-  
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
