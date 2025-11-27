@@ -2,33 +2,58 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="3D-Consistent Multi-View Editing by Diffusion Guidance">
+  <meta name="description" content="3D-Consistent Multi-View Editing by Diffusion Guidance">
   <meta name="keywords" content="3D Editing">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>3D-Consistent Multi-View Editing by Diffusion Guidance</title>
 
+  <style>
+    /* Reduce vertical spacing between sections */
+    section.section {
+      padding-top: 1.5rem !important;
+      padding-bottom: 1.5rem !important;
+    }
+    .hero {
+      padding-top: 2rem !important;
+      padding-bottom: 2rem !important;
+    }
+    .hero .hero-body {
+      padding: 1.5rem 0 !important;
+    }
+    .container.is-max-desktop {
+      margin-top: 1rem !important;
+      margin-bottom: 1rem !important;
+    }
+    h2.title.is-3 {
+      margin-bottom: 1rem !important;
+    }
+    .content p {
+      margin-bottom: 0.75rem !important;
+    }
+    video {
+      margin-top: 1rem !important;
+      margin-bottom: 1rem !important;
+    }
+    img, image {
+      margin-top: 1rem !important;
+      margin-bottom: 1rem !important;
+    }
+  </style>
+
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
+    function gtag(){dataLayer.push(arguments);} 
     gtag('js', new Date());
-
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -38,291 +63,179 @@
   <script src="./static/js/index.js"></script>
 
   <script>
-  window.MathJax = {
-    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
-  };
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  
+    window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
+<!-- HERO SECTION -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">3D-Consistent Multi-View Editing by Diffusion Guidance</h1>
+
           <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://www.chalmers.se/en/persons/bjosef/">Josef Bengtson</a><sup>1</sup>, </span>
-            <span class="author-block">
-              <a href="https://www.chalmers.se/personer/davini/">David Nilsson</a><sup>1</sup>, </span>
-            <span class="author-block">
-              Dong In Lee<sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.chalmers.se/en/persons/kahlf/">Fredrik Kahl</a><sup>1</sup>,
-            </span>
+            <span class="author-block"><a href="https://www.chalmers.se/en/persons/bjosef/">Josef Bengtson</a><sup>1</sup>, </span>
+            <span class="author-block"><a href="https://www.chalmers.se/personer/davini/">David Nilsson</a><sup>1</sup>, </span>
+            <span class="author-block">Dong In Lee<sup>2</sup>, </span>
+            <span class="author-block"><a href="https://www.chalmers.se/en/persons/kahlf/">Fredrik Kahl</a><sup>1</sup></span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Chalmers University of Technology  &nbsp; </span>
-            <span class="author-block"><sup>2</sup>Korea University &nbsp; </span>
+            <span class="author-block"><sup>1</sup>Chalmers University of Technology</span>
+            <span class="author-block" style="margin-left: 0.5rem;"><sup>2</sup>Korea University</span>
           </div>
-          
+
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
               <span class="link-block">
-                <a href="static/3d-consistent-editing.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
+                <a href="static/3d-consistent-editing.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
                   <span>Paper</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Code Link. -->
               <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
                   <span>Code (Coming Soon)</span>
-                  </a>
+                </a>
               </span>
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href="ADD ME"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
-              </span> -->
             </div>
           </div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
-
 <section class="section">
   <div class="container is-max-desktop">
-     <!-- Paper video. -->
-    <!--/<div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
     <video controls>
       <source src="VideoWebsiteMain.mp4" type="video/mp4">
     </video>
-    <!--/ Paper video. -->
   </div>
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-           Recent advancements in diffusion models have greatly improved text-based image editing, yet methods that edit images independently often produce geometrically and photometrically inconsistent results across different views of the same scene. Such inconsistencies are particularly problematic for editing of 3D representations such as NeRFs or Gaussian Splat models. 
-          <p>
-            We propose a training-free diffusion framework that enforces multi-view consistency during the image editing process. The key assumption is that corresponding points in the unedited images should undergo similar transformations after editing. To achieve this, we introduce a consistency loss that guides the diffusion sampling toward coherent edits. The framework  is flexible and can be combined with widely varying image editing methods, supporting both dense and sparse multi-view editing setups. Experimental results show that our approach significantly improves 3D consistency compared to existing multi-view editing methods. We also show that this increased consistency enables high-quality Gaussian Splat editing with sharp details and strong fidelity to user-specified text prompts.</p>
-        </div>
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Abstract</h2>
+      <div class="content has-text-justified">
+        <p>Recent advancements in diffusion models have greatly improved text-based image editing, yet methods that edit images independently often produce geometrically and photometrically inconsistent results across different views of the same scene.</p>
+        <p>We propose a training-free diffusion framework that enforces multi-view consistency during the image editing process. The key assumption is that corresponding points in the unedited images should undergo similar transformations after editing.</p>
       </div>
     </div>
-    <!--/ Abstract. -->
-   
+  </div>
 </section>
 
+<!-- MULTI-VIEW CONSISTENT EDITING -->
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Multi-view Consistent Editing -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Multi-view Consistent Editing</h2>
         <div class="content has-text-justified">
-          
-          <p> 
-            Image editing methods applied independently to multi-view images often produce inconsistent edits across views. Our method improves multi-view consistency by guiding the diffusion process to generate edited images with improved consistency.
-          </p> 
-          <div class="container is-max-desktop" style="margin-bottom: 2rem;">
-            <div>
-              <img src="static/images/ConsistencyExample.png" />
-            </div>
-          </div>
-          
+          <p>Image editing methods applied independently to multi-view images often produce inconsistent edits across views. Our method improves multi-view consistency by guiding the diffusion process.</p>
+
           <div class="container is-max-desktop">
-            <div>
-              <img src="static/images/ConsistencyExampleJoker.png" />
-            </div>
+            <img src="static/images/ConsistencyExample.png" />
           </div>
-          
+          <div class="container is-max-desktop">
+            <img src="static/images/ConsistencyExampleJoker.png" />
+          </div>
         </div>
       </div>
     </div>
-    <!--/ Multi-view Consistent Editing -->
   </div>
 </section>
-  
 
+<!-- METHOD SECTION -->
 <section class="section is-small">
   <div class="container is-max-desktop">
-    <!-- Method -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
+          <p>Our method guides the diffusion editing process to improve multi-view consistency.</p>
 
-          <p> 
-            Our method guides the diffusion editing process to improve milti-view consistency.
-         </p>
-   <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <image src="static/images/systemfig.png" />
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">
-      </h2>
-    </div>
-  </div>
-</section>
-         <p> 
-            Given a set of input images, each view is edited sequentially by guiding the diffusion process based on the previously edited images. The guidance is based on the assumption that matching points in the unedited images should be edited similarly. During the diffusion process the noise estimate $\epsilon(z_t,t)$ is modified according to a consistency loss $\mathcal{L}_c$ resulting in multi-view consistent edits.
-          </p> 
-          
-        </div>
-      </div>
-    </div>
-
-        <!--/ Sparse Editing  -->
-  </div>
-</section>
-
-  <section class="section">
-  <div class="container is-max-desktop">
-    <!---->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3"> Sparse Editing </h2>
-        <div class="content has-text-justified">
-    <p> 
-      Our method can also be utilized for sparse-view editing
-       </p>
-           <div class="container is-max-desktop">
-            <div class="hero-body">
-              <image src="static/images/SparseExample.png" />
-              <h4 class="subtitle has-text-centered" style="font-size: 1rem;">
-                <span class="dnerf">
-              </h2>
-            </div>
+          <div class="container is-max-desktop">
+            <img src="static/images/systemfig.png" />
           </div>
-     <!-- pix2pix turbo video. -->
-    <!--/<div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <video controls>
-      <source src="SparseVideoExample2.mp4" type="video/mp4">
-    </video>
-    <!--/ Paper video. -->
 
-          
+          <p>Given a set of input images, each view is edited sequentially by guiding the diffusion process based on the previously edited images.</p>
         </div>
       </div>
     </div>
-    <!--/ Sparse Editing -->
-
-
-    
-    <!--/ Different Editing  -->
   </div>
 </section>
 
-  <section class="section">
+<!-- SPARSE EDITING -->
+<section class="section">
   <div class="container is-max-desktop">
-    <!---->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3"> Our method can easily be combined with different 2D Editing methods </h2>
+        <h2 class="title is-3">Sparse Editing</h2>
         <div class="content has-text-justified">
-    <p> 
-      We here show additional results combining our method with  <a href="https://arxiv.org/abs/2403.12036" target="_blank">pix2pix-turbo</a>, a editing method based on one-step diffusion.
-       </p>
-     <!-- pix2pix turbo video. -->
-    <!--/<div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <video controls>
-      <source src="pix2pix-turbo-results.mp4" type="video/mp4">
-    </video>
-    <!--/ Paper video. -->
+          <p>Our method can also be utilized for sparse-view editing.</p>
 
-          
+          <div class="container is-max-desktop">
+            <img src="static/images/SparseExample.png" />
+          </div>
+
+          <video controls>
+            <source src="SparseVideoExample2.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
-    <!--/ Different Editing -->
-
-
-    
-    
   </div>
 </section>
-<section class="section" id="BibTeX">
 
+<!-- DIFFERENT 2D EDITING METHODS -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Compatible with Various 2D Editing Methods</h2>
+        <div class="content has-text-justified">
+          <p>We show results combining our method with <a href="https://arxiv.org/abs/2403.12036" target="_blank">pix2pix-turbo</a>.</p>
+
+          <video controls>
+            <source src="pix2pix-turbo-results.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIBTEX -->
+<section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-       <p> 
-  If you use this work or find it helpful, please consider citing: 
-      </p>
-    <pre><code>
-      @InProceedings{
-}
+    <p>If you use this work, please cite:</p>
+    <pre><code>@InProceedings{}
 </code></pre>
   </div>
 </section>
 
-
-
 <footer class="footer">
   <div align="center" class="container">
     <div class="columns is-centered">
-        <div class="content">
-          This website is borrowed from <a href="https://github.com/3d-moments/3d-moments.github.io">3D Moments</a> and <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
-        </div>
+      <div class="content">
+        This website is borrowed from 3D Moments and Nerfies.
       </div>
     </div>
+  </div>
 </footer>
-
 
 </body>
 </html>
