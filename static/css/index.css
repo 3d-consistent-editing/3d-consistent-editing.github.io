@@ -192,3 +192,24 @@ body {
     height: 335px;
     object-fit: cover;
 }
+
+.hero {
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: white;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hero .title {
+  color: white;
+  font-family: "Google Sans", sans-serif;
+}
+
+.hero .publication-authors a {
+  color: #ffe9a8;
+}
+
+.hero .publication-links .button.is-dark {
+  background-color: #ffffff22;
+  border: 1px solid #ffffff55;
+}
