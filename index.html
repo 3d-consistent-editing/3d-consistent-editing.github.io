@@ -167,14 +167,14 @@
         <div class="content has-text-justified">
           
           <p> 
-            Image editing methods applied independently to multi-view images often produce inconsistent edits across views. Our method improves multi-view consistency by guiding the diffusion process to generate edited images with improved consistency.
+            Image editing methods applied independently to multi-view images often produce inconsistent edits across views. Our method improves multi-view consistency by guiding the denoising process to generate edited images with improved consistency.
           </p> 
             
 
           
             <div class="container is-max-desktop" style="margin-bottom: 2rem;">
                <div>
-              <img src="static/images/FluxExample.png" />
+              <img src="static/images/FluxExamples.png" />
             </div>
             <div>
               <img src="static/images/ConsistencyExample.png" />
@@ -216,7 +216,7 @@
         <div class="content has-text-justified">
 
           <p> 
-            Our method guides the diffusion editing process to improve milti-view consistency.
+            Our method guides the diffusion or flow-matching editing process to improve multi-view consistency.
          </p>
    <section class="section">
   <div class="container is-max-desktop">
@@ -229,7 +229,7 @@
   </div>
 </section>
          <p> 
-            Given a set of input images, each view is edited sequentially by guiding the diffusion process based on the previously edited images. The guidance is based on the assumption that matching points in the unedited images should be edited similarly. During the diffusion process the noise estimate $\epsilon(z_t,t)$ is modified according to a consistency loss $\mathcal{L}_c$ resulting in multi-view consistent edits.
+            Given a set of input images, each view is edited sequentially by guiding the denoising process based on the previously edited images. The guidance is based on the assumption that matching points in the unedited images should be edited similarly. During the denoising process the noise estimate $\epsilon(z_t,t)$ is modified according to a consistency loss $\mathcal{L}_c$ resulting in multi-view consistent edits.
           </p> 
           
         </div>
